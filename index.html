@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="A fictional salon website demonstration for Elite Style Salon in Naranpura, Ahmedabad.">
+  <meta name="theme-color" content="#f4eee7">
+  <title>Elite Style Salon — A style that feels like yours</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="demo-bar">Demonstration only · all business details, ratings and reviews are fictional</div>
+  <div class="loader" aria-hidden="true"><span class="loader-mark">ES</span><span class="loader-line"></span></div>
+
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="Elite Style Salon home"><span class="wordmark-mark">ES</span><span>ELITE STYLE<br><small>SALON · AHMEDABAD</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#visit">Visit</a>
+      <a class="nav-call" href="tel:+919876543210">Call to book</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">
+      <span class="theme-toggle-track" aria-hidden="true">
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M20.5 14.3A8.7 8.7 0 0 1 9.7 3.5 8.8 8.8 0 1 0 20.5 14.3Z"/></svg>
+        <span class="theme-toggle-thumb"></span>
+      </span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <h1 id="hero-title">A style that feels like yours.</h1>
+        <p class="hero-description">Haircuts, color and beauty rituals to help you find the look you came for.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="tel:+919876543210">Call to book <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#services">Explore services</a>
+        </div>
+        <div class="open-note"><span class="status-dot" aria-hidden="true"></span><span>Sample hours · Open until 9 pm<br><small>Hours may vary during festivals</small></span></div>
+      </div>
+      <div class="hero-visual reveal" data-tilt>
+        <img class="hero-image" src="https://images.unsplash.com/photo-1752504704467-c837aff78ee6?auto=format&fit=crop&crop=faces&w=1400&q=85" alt="A stylist arranging a client's hair in a salon" fetchpriority="high">
+        <a class="image-caption" href="https://unsplash.com/photos/a-stylist-is-styling-a-womans-hair-HCNTA3yYlvo" target="_blank" rel="noreferrer">Illustrative editorial photo · Unsplash</a>
+        <div class="rating-stamp"><span>4.7 <small>/ 5</small></span><span>2,846<br><small>sample reviews</small></span></div>
+        <span class="visual-index" aria-hidden="true">01 / 04</span>
+      </div>
+    </section>
+
+    <section class="about section-wrap reveal" id="about" aria-labelledby="about-title">
+      <div><h2 id="about-title">A little time for your next look.</h2><p>Explore hair, color, grooming, skin and nail services, with bridal makeup and occasion-ready styling in the mix.</p></div>
+      <div class="about-detail"><p>Start with the service you have in mind. Call to ask about appointment availability and sample pricing.</p><a class="text-link" href="#services">Explore the service menu <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="services section-wrap" id="services" aria-labelledby="services-title">
+      <div class="section-heading reveal">
+        <h2 id="services-title">Good hair days start here.</h2>
+        <p class="section-aside">Explore the sample service menu. Call for appointment and pricing details.</p>
+      </div>
+      <div class="service-controls" role="group" aria-label="Filter services">
+        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All services</button>
+        <button class="filter-button" type="button" data-filter="hair" aria-pressed="false">Hair</button>
+        <button class="filter-button" type="button" data-filter="color" aria-pressed="false">Color</button>
+        <button class="filter-button" type="button" data-filter="grooming" aria-pressed="false">Grooming</button>
+        <button class="filter-button" type="button" data-filter="skin" aria-pressed="false">Skin & body</button>
+        <button class="filter-button" type="button" data-filter="nails" aria-pressed="false">Nails</button>
+      </div>
+      <div class="service-list" id="service-list">
+        <a class="service-item" href="tel:+919876543210" data-category="hair"><span>Haircuts</span><span>01</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="hair"><span>Children’s haircuts</span><span>02</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="hair"><span>Hairstyling</span><span>03</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="hair"><span>Fringe trim</span><span>04</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="hair"><span>Blow-dry</span><span>05</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="hair"><span>Braiding</span><span>06</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="hair"><span>Hair extensions</span><span>07</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="hair"><span>Shampoo & conditioning</span><span>08</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="color"><span>Hair colouring</span><span>09</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="color"><span>Balayage</span><span>10</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="color"><span>Highlights</span><span>11</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="color"><span>Keratin treatment</span><span>12</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="color"><span>Hair straightening</span><span>13</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="color"><span>Hair spa</span><span>14</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="grooming"><span>Beard trim</span><span>15</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="grooming"><span>Shaving</span><span>16</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="grooming"><span>Eyebrow threading</span><span>17</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="skin"><span>Body waxing</span><span>18</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="skin"><span>Bridal makeup</span><span>19</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="skin"><span>Facial treatments</span><span>20</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="skin"><span>Massage</span><span>21</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="nails"><span>Manicure</span><span>22</span></a>
+        <a class="service-item" href="tel:+919876543210" data-category="nails"><span>Pedicure</span><span>23</span></a>
+      </div>
+      <p class="service-count" id="service-count" aria-live="polite">Showing 23 sample services</p>
+      <p class="service-note">All listed services are part of this fictional demonstration.</p>
+    </section>
+
+    <section class="lookbook" id="lookbook" aria-labelledby="lookbook-title">
+      <div class="section-wrap">
+        <div class="lookbook-heading reveal"><h2 id="lookbook-title">A few ideas to bring with you.</h2><p>Editorial inspiration only. These photographs are not Elite Style Salon clients or results.</p></div>
+        <div class="lookbook-grid">
+          <figure class="lookbook-main reveal"><img src="https://images.unsplash.com/photo-1665703156181-b92723e119a2?auto=format&fit=crop&crop=faces&w=1200&q=80" alt="Illustrative close-up portrait with long, softly styled hair" loading="lazy" decoding="async"><figcaption><span>01</span> Editorial reference · <a href="https://unsplash.com/photos/a-woman-with-long-hair-zsdR0xy2fqU" target="_blank" rel="noreferrer">Unsplash</a></figcaption></figure>
+          <figure class="lookbook-side reveal"><img src="https://images.unsplash.com/photo-1679517722035-cec243315af5?auto=format&fit=crop&crop=faces&w=900&q=80" alt="Illustrative beauty portrait with long, straight hair" loading="lazy" decoding="async"><figcaption><span>02</span> Editorial reference · <a href="https://unsplash.com/photos/a-close-up-of-a-woman-with-long-hair-ita0hM1-5nA" target="_blank" rel="noreferrer">Unsplash</a></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="review-section" id="reviews" aria-labelledby="reviews-title">
+      <div class="section-wrap review-inner">
+        <div class="review-summary reveal">
+          <h2 id="reviews-title">The details make the difference.</h2>
+          <div class="score-line"><strong>4.7</strong><span>out of 5<br>2,846 fictional reviews</span></div>
+          <div class="rating-bars" aria-label="Sample review distribution">
+            <div class="rating-row"><span>5</span><span class="bar"><i style="--fill:78%"></i></span><span>78%</span></div>
+            <div class="rating-row"><span>4</span><span class="bar"><i style="--fill:14%"></i></span><span>14%</span></div>
+            <div class="rating-row"><span>3</span><span class="bar"><i style="--fill:5%"></i></span><span>5%</span></div>
+            <div class="rating-row"><span>2</span><span class="bar"><i style="--fill:2%"></i></span><span>2%</span></div>
+            <div class="rating-row"><span>1</span><span class="bar"><i style="--fill:1%"></i></span><span>1%</span></div>
+          </div>
+          <p class="fiction-note">Sample review figures · fictional demonstration content</p>
+        </div>
+        <div class="review-quotes reveal">
+          <figure class="quote quote-large"><blockquote>“The haircut was excellent, and the stylist understood exactly what I wanted.”</blockquote><figcaption>Example customer review · fictional</figcaption></figure>
+          <figure class="quote"><blockquote>“Amazing hair spa experience. The service was smooth, and the staff gave helpful suggestions.”</blockquote><figcaption>Example customer review · fictional</figcaption></figure>
+          <figure class="quote"><blockquote>“Good ambience and friendly staff. The haircut was stylish, and the pricing was reasonable.”</blockquote><figcaption>Example customer review · fictional</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section-wrap reveal" aria-labelledby="process-title">
+      <h2 id="process-title">From idea to appointment.</h2>
+      <div class="process-steps">
+        <div><span>01</span><h3>Choose a service</h3><p>Browse the sample menu and pick a place to start.</p></div>
+        <div><span>02</span><h3>Call the salon</h3><p>Ask about availability and service pricing.</p></div>
+        <div><span>03</span><h3>Visit Naranpura</h3><p>Use the sample address and directions below.</p></div>
+      </div>
+    </section>
+
+    <section class="faq section-wrap" id="faq" aria-labelledby="faq-title">
+      <div class="faq-heading"><h2 id="faq-title">A few quick answers.</h2><p>This is a static fictional demonstration; it has no live booking or payment service.</p></div>
+      <div class="faq-list">
+        <details><summary>Can I book an appointment online?</summary><p>No. The website is a static demo. Its call link uses the fictional sample number shown on this page.</p></details>
+        <details><summary>Are the reviews and business details real?</summary><p>No. The salon, address, phone, hours, rating and all review content are fictional examples.</p></details>
+        <details><summary>Were service prices provided?</summary><p>No prices were supplied. Call the sample number to ask about pricing.</p></details>
+      </div>
+    </section>
+
+    <section class="visit section-wrap" id="visit" aria-labelledby="visit-title">
+      <div class="visit-heading reveal"><h2 id="visit-title">Find us in Naranpura.</h2></div>
+      <div class="visit-grid reveal">
+        <div class="visit-address"><span class="visit-label">ADDRESS · SAMPLE</span><address>2nd Floor, 204<br>Sample Business Complex<br>Naranpura, Ahmedabad<br>Gujarat 380013</address><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=2nd%20Floor%2C%20204%2C%20Sample%20Business%20Complex%2C%20Naranpura%2C%20Ahmedabad%2C%20Gujarat%20380013" target="_blank" rel="noreferrer">Open sample directions <span aria-hidden="true">↗</span></a></div>
+        <div class="visit-hours"><span class="visit-label">SAMPLE HOURS</span><p>Open · closes 9 pm</p><small>Hours may vary during festivals.</small></div>
+        <div class="visit-contact"><span class="visit-label">CALL THE SALON</span><a href="tel:+919876543210">+91 98 7654 3210</a><small>Fictional number for demonstration only.</small></div>
+      </div>
+      <p class="visit-disclaimer">The address, phone number and hours above are fictional and for demonstration only.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><a class="wordmark footer-wordmark" href="#top"><span class="wordmark-mark">ES</span><span>ELITE STYLE<br><small>SALON · AHMEDABAD</small></span></a><p>Find your look. Make it yours.</p><a class="button button-light" href="tel:+919876543210">Call to book <span aria-hidden="true">↗</span></a></div>
+    <div class="footer-bottom"><span>Fictional business demonstration · no live booking system</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>
